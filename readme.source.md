@@ -101,12 +101,12 @@
     borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
   }}>
-    <img src={github?.user?.avatarUrl ?? 'https://github.com/Rohitxcd.png'} width={88} height={88} style={{ borderRadius: 44 }} />
+    <img src={github?.user?.avatarUrl ?? 'https://avatars.githubusercontent.com/u/9919?s=200&v=4'} width={88} height={88} style={{ borderRadius: 44 }} />
   </div>
 
   <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
     <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
-      {github?.user?.name || github?.user?.login || 'Rohitxcd' || 'Name'}
+      {github?.user?.name || github?.user?.login || 'Name'}
     </div>
     <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
       {github?.user?.bio || 'Put here your bio'}
@@ -114,7 +114,7 @@
     <div style={{ display:'flex', gap:8, marginTop:6, flexWrap: 'wrap' }}>
       {((github && github.languages && github.languages.length > 0)
         ? github.languages.slice(0, 4).map(function(l) { return l.name; })
-        : ['readme-aura', 'other technologies']
+        : ['readme-aura', 'TypeScript', 'React']
       ).map(function(tag, i) {
         return (
           <div key={tag + '-' + i} style={{
