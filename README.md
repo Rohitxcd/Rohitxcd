@@ -50,6 +50,6 @@
 
 <br><br>
 
-<i>Focused on AI Engineering • Production RAG • End-to-End AI Systems</i>
+<i>Break it  • Build it • Ship it </i>
 
 </div>
